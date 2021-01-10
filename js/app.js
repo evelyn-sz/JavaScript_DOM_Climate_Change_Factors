@@ -20,16 +20,21 @@ const createFeedbackLoopItem = (form) => {
     const feedbackLoopItem = document.createElement('li');
     feedbackLoopItem.classList.add('feedback-loop-item');
 
-    const factorName = document.createElement('h2');
-    factorName.textContent = (`Factor name: ${form.factorName.value}`);
+    const factorName = document.createElement('li');
+    factorName.textContent = form.factorName.value;
     feedbackLoopItem.appendChild(factorName);
 
-    const source = document.createElement('h3');
-    source.textContent = form.source.value;
-    feedbackLoopItem.appendChild(source);
+    const cause = document.createElement('li');
+    cause.textContent = (`Cause: ${form.cause.value}`);
+    feedbackLoopItem.appendChild(cause);
 
-    const impact = document.createElement('p');
-    impact.textContent = form.impact.value;
+    const impact = document.createElement('li');
+    impact.textContent = (`Sign: ${form.impact.value}`);
+    // if (impact.textContent == 'Positive') {
+    //     impact.textContent.add('red')
+    // } else {
+    //     impact.textContent.add('blue')
+    // }
     feedbackLoopItem.appendChild(impact);
 
     return feedbackLoopItem;
@@ -39,3 +44,4 @@ const handleDeleteAllClick = () => {
     const feedbackLoop = document.querySelector('#climate-change-factors');
     feedbackLoop.innerHTML = '';
 }
+

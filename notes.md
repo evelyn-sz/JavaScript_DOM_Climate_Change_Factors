@@ -2,6 +2,7 @@
 // Name                     Cause:                  Net impact:
 // GHG emissions            human                   Positive
 // sea level rise           melting ice sheets      Positive
+//                          water expansion
 // melting ice sheets       temperature increase    Positive
 // permafrost melting       temperature increase    Positive
 // methane clathrate                                

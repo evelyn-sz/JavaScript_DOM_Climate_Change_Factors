@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Climate change app</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
     <script src="js/app.js"></script>
   </head>
   <body>
@@ -15,38 +15,62 @@
         </div>
 
         <div class="form-item">
-          <label for="source" class="primary">Source</label>
-          <input type="text" id="source" required/>
+          <label for="cause" class="primary">Cause</label>
+          <input type="text" id="cause" required/>
         </div>
 
         <div class="form-item">
           <label for="impact" class="primary">Impact on loop</label>
-          <!-- <select id="impact"> -->
-            <input type="radio" id="impactType1" name ="impact" value="text">
-            <label for="impactType1">Positive</label>
+            <input type="radio" id="impactType1" name ="impact" value="positive">
+            <label for="impactType1">Positive (reinforcing)</label>
 
-            <input type="radio" id="impactType2" name="impact" value="text">
-            <label for="impactType2">Negative</label>
+            <input type="radio" id="impactType2" name="impact" value="negative">
+            <label for="impactType2">Negative (offsetting)</label>
 
-            <input type="radio" id="impactType3" name="impact" value="text">
+            <input type="radio" id="impactType3" name="impact" value="Both">
             <label for="impactType3">Both</label>
 
-            <!-- <option value="" disabled selected></option>
-            <option value="positive">Positive</option>
-            <option value="negative">Negative</option>
-            <option value="both">Both</option> -->
           </select>
         </div>
       </div>
       <input type="submit" value="save"/>
     </form>
-
-    <button id="delete-all">Delete All</button>
-    <div class="heading">
-        <h1>Global warming</h1>
-        <h2>Self-reinforcing positive feedback loop</h2>
-        <h3>Climate change factors:</h3>
+    <div class="content">
+        <div class="heading">
+            <h1>Global warming</h1>
+            <h2>Self-reinforcing positive feedback loop</h2>
+            <h3>Climate change factors:</h3>
+        </div>
+        <div class="factors">
         <ul id="climate-change-factors"></ul>
+        <div class="feedback-loop-item">
+            <li>GHG emissions</li>
+            <li>Cause: Human activities</li>
+            <li>Sign: Positive</li>
+        </div>
+        <div class="feedback-loop-item">
+            <li>Ocean acidification</li>
+            <li>Cause: Elevated atmospheric CO2</li>
+            <li>Sign: Positive</li>
+        </div>
+        <div class="feedback-loop-item">
+            <li>Melting ice sheets</li>
+            <li>Cause: Elevated temperatures</li>
+            <li>Sign: Positive</li>
+        </div>
+        <div class="feedback-loop-item">
+            <li>Increasing cloud cover</li>
+            <li>Cause: Increase in evaporation</li>
+            <li>Sign: Negative</li>
+        </div>
+        <div class="feedback-loop-item">
+            <li>Volcanic eruptions</li>
+            <li>Cause: Tectonics</li>
+            <li>Sign: Negative</li>
+        </div>
+        
+        </div>
+        <button id="delete-all">Delete All</button>
     </div>
   </body>
 </html>
