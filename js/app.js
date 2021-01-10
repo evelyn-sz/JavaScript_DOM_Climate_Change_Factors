@@ -22,6 +22,7 @@ const createFeedbackLoopItem = (form) => {
 
     const factorName = document.createElement('li');
     factorName.textContent = form.factorName.value;
+    factorName.textContent.add('')
     feedbackLoopItem.appendChild(factorName);
 
     const cause = document.createElement('li');
@@ -30,11 +31,12 @@ const createFeedbackLoopItem = (form) => {
 
     const impact = document.createElement('li');
     impact.textContent = (`Sign: ${form.impact.value}`);
-    // if (impact.textContent == 'Positive') {
-    //     impact.textContent.add('red')
-    // } else {
-    //     impact.textContent.add('blue')
-    // }
+    if (impact.textContent === 'Positive') {
+        impact.classList.add('red')
+    } else if (
+        impact.textContent === "Negative")
+        {impact.classList.add('blue')
+    }
     feedbackLoopItem.appendChild(impact);
 
     return feedbackLoopItem;
@@ -44,4 +46,3 @@ const handleDeleteAllClick = () => {
     const feedbackLoop = document.querySelector('#climate-change-factors');
     feedbackLoop.innerHTML = '';
 }
-

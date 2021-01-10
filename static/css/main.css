@@ -9,8 +9,10 @@ body {
 .form-item {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     margin: 4px;
+    text-shadow:2px 2px 5px rgb(171, 211, 211);
+
 }
 
 div.content {
@@ -24,6 +26,8 @@ div.factors {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
+    width: 600px;
 }
 
 .heading {
@@ -31,11 +35,11 @@ div.factors {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    font-family: Georgia, Times, serif;
+
 }
 
 h1, h2, h3 {
-    text-shadow:rgb(171, 211, 211);
+    text-shadow:2px 2px 5px rgb(171, 211, 211);
 }
 .primary {
     font-weight: bolder;
@@ -47,6 +51,8 @@ h1, h2, h3 {
 
 ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .feedback-loop-item {
@@ -59,6 +65,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 250px;
     text-shadow: 1px 1px 3px rgb(44, 41, 38);
 }

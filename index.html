@@ -21,19 +21,25 @@
 
         <div class="form-item">
           <label for="impact" class="primary">Impact on loop</label>
-            <input type="radio" id="impactType1" name ="impact" value="positive">
-            <label for="impactType1">Positive (reinforcing)</label>
-
+            <div class="radio-element">
+                <input type="radio" id="impactType1" name ="impact" value="positive">
+                <label for="impactType1">Positive (reinforcing)</label>
+            </div>
+            
+            <div class="radio-element">
             <input type="radio" id="impactType2" name="impact" value="negative">
             <label for="impactType2">Negative (offsetting)</label>
+            </div>
 
+            <div class="radio-element">
             <input type="radio" id="impactType3" name="impact" value="Both">
             <label for="impactType3">Both</label>
+            </div>
 
           </select>
         </div>
       </div>
-      <input type="submit" value="save"/>
+      <input type="submit" value="Save"/>
     </form>
     <div class="content">
         <div class="heading">
@@ -42,33 +48,33 @@
             <h3>Climate change factors:</h3>
         </div>
         <div class="factors">
-        <ul id="climate-change-factors"></ul>
-        <div class="feedback-loop-item">
-            <li>GHG emissions</li>
-            <li>Cause: Human activities</li>
-            <li>Sign: Positive</li>
-        </div>
-        <div class="feedback-loop-item">
-            <li>Ocean acidification</li>
-            <li>Cause: Elevated atmospheric CO2</li>
-            <li>Sign: Positive</li>
-        </div>
-        <div class="feedback-loop-item">
-            <li>Melting ice sheets</li>
-            <li>Cause: Elevated temperatures</li>
-            <li>Sign: Positive</li>
-        </div>
-        <div class="feedback-loop-item">
-            <li>Increasing cloud cover</li>
-            <li>Cause: Increase in evaporation</li>
-            <li>Sign: Negative</li>
-        </div>
-        <div class="feedback-loop-item">
-            <li>Volcanic eruptions</li>
-            <li>Cause: Tectonics</li>
-            <li>Sign: Negative</li>
-        </div>
-        
+        <ul id="climate-change-factors">
+            <div class="feedback-loop-item">
+                <li>GHG emissions</li>
+                <li>Cause: Human activities</li>
+                <li>Sign: Positive</li>
+            </div>
+            <div class="feedback-loop-item">
+                <li>Ocean acidification</li>
+                <li>Cause: Elevated atmospheric CO2</li>
+                <li>Sign: Positive</li>
+            </div>
+            <div class="feedback-loop-item">
+                <li>Melting ice sheets</li>
+                <li>Cause: Elevated temperatures</li>
+                <li>Sign: Positive</li>
+            </div>
+            <div class="feedback-loop-item">
+                <li>Increasing cloud cover</li>
+                <li>Cause: Increase in evaporation</li>
+                <li>Sign: Negative</li>
+            </div>
+            <div class="feedback-loop-item">
+                <li>Volcanic eruptions</li>
+                <li>Cause: Tectonics</li>
+                <li>Sign: Negative</li>
+            </div>
+        </ul>
         </div>
         <button id="delete-all">Delete All</button>
     </div>
