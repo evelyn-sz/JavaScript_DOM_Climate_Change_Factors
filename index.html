@@ -21,11 +21,20 @@
 
         <div class="form-item">
           <label for="impact" class="primary">Impact on loop</label>
-          <select id="impact">
-            <option value="" disabled selected></option>
+          <!-- <select id="impact"> -->
+            <input type="radio" id="impactType1" name ="impact" value="text">
+            <label for="impactType1">Positive</label>
+
+            <input type="radio" id="impactType2" name="impact" value="text">
+            <label for="impactType2">Negative</label>
+
+            <input type="radio" id="impactType3" name="impact" value="text">
+            <label for="impactType3">Both</label>
+
+            <!-- <option value="" disabled selected></option>
             <option value="positive">Positive</option>
             <option value="negative">Negative</option>
-            <option value="both">Both</option>
+            <option value="both">Both</option> -->
           </select>
         </div>
       </div>

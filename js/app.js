@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const newItemForm = document.querySelector('#new-item-form');
     newItemForm.addEventListener('submit', handleNewItemFormSubmit);
+
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
 const handleNewItemFormSubmit = (event) => {
@@ -30,4 +33,9 @@ const createFeedbackLoopItem = (form) => {
     feedbackLoopItem.appendChild(impact);
 
     return feedbackLoopItem;
+};
+
+const handleDeleteAllClick = () => {
+    const feedbackLoop = document.querySelector('#climate-change-factors');
+    feedbackLoop.innerHTML = '';
 }
